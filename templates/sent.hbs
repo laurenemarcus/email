@@ -1,16 +1,16 @@
-<h4>Sent</h4>
+<div class="panel panel-default">
+  <div class="panel-heading">Sent</div>
+  <div class="panel-body">
+    <ul>
+      {{#each sent in model}}
+        <div class="col-md-4">
+          <li>
+            {{#link-to 'sent-message' sent}}{{sent.sentEmail}}, {{sent.sentSubject}}{{/link-to}}
+          </li>
+        </div>
+      {{/each}}
+    </ul>
+  </div>
+</div>
 
-<ul>
-  {{#each sent in model}}
-    <div class="col-md-4">
-      <li>
-        <h3>{{#link-to 'sent-message' sent}}{{sent.sentEmail}},
-          {{sent.sentSubject}}{{/link-to}}</h3>
-
-      </li>
-    </div>
-  {{/each}}
-</ul>
-
-<h3>Compose New Message:</h3>
-  {{#link-to 'new-sent' class="btn btn-primary"}}Compose{{/link-to}}
+{{#link-to 'new-sent' class="btn btn-primary"}}Compose{{/link-to}}

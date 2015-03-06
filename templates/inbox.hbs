@@ -1,16 +1,16 @@
-<h1>Inbox</h1>
+<div class="panel panel-default">
+  <div class="panel-heading">Inbox</div>
+  <div class="panel-body">
+    <ul>
+      {{#each inbox in model}}
+        <div class="col-md-4">
+          <li>
+            {{#link-to 'inbox-message' inbox}} {{inbox.senderEmail}}, {{inbox.senderSubject}}{{/link-to}}
+          </li>
+        </div>
+      {{/each}}
+    </ul>
+  </div>
+</div>
 
-<ul>
-  {{#each inbox in model}}
-    <div class="col-md-4">
-      <li>
-        <h3>{{#link-to 'inbox-message' inbox}}{{inbox.senderEmail}},
-          {{inbox.senderSubject}}{{/link-to}}</h3>
-
-      </li>
-    </div>
-  {{/each}}
-</ul>
-
-<h3>Add a New Inbox Message:</h3>
-  {{#link-to 'new-inbox' class="btn btn-primary"}}Compose{{/link-to}}
+{{#link-to 'new-inbox' class="btn btn-primary"}}Compose{{/link-to}}
