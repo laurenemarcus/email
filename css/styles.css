@@ -1,7 +1,26 @@
+nav {
+  background-color: #B9D8DA;
+}
+
 .email {
   width: 200px;
 }
 
 body {
   font-family: 'Comfortaa', cursive;
+  background-color: #B9D8DA;
+}
+
+.panel-body {
+  background-color: #D0E5E6;
+}
+
+.panel-heading {
+background-color: #87ACB5;
+}
+
+.btn {
+  background-color: #888B9C;
+  color: white;
+
 }
