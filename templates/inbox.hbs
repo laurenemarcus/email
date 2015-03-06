@@ -1,15 +1,22 @@
 <div class="panel panel-default">
   <div class="panel-heading">Inbox</div>
   <div class="panel-body">
-    <ul>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>From</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      <tbody>
       {{#each inbox in model}}
-        <div class="col-md-4">
-          <li>
-            {{#link-to 'inbox-message' inbox}} {{inbox.senderEmail}}, {{inbox.senderSubject}}{{/link-to}}
-          </li>
-        </div>
+      <tr>
+        <td class="email">{{#link-to 'inbox-message' inbox}}{{inbox.senderEmail}}{{/link-to}}</td>
+        <td>{{#link-to 'inbox-message' inbox}}{{inbox.senderSubject}}{{/link-to}}</td>
+      </tr>
       {{/each}}
-    </ul>
+      </tbody>
+    </table>
   </div>
 </div>
 

@@ -1,3 +1,12 @@
-<h4>Your Email Address: {{sentEmail}}</h4>
-<h4>Subject: {{sentSubject}}</h4>
-<h4>{{sentBody}}</h4>
+<div class="panel panel-default">
+  <div class="panel-heading">{{sentSubject}}</div>
+  <div class="panel-body">
+    <h4>To:&nbsp;&nbsp;{{sentEmail}}</h4>
+    <h4>Subject:&nbsp;&nbsp;{{sentSubject}}</h4>
+    <div class="panel-body">
+      <h4>{{sentBody}}</h4>
+    </div>
+  </div>
+</div>
+
+{{#link-to 'new-sent' class="btn btn-primary"}}Compose{{/link-to}}

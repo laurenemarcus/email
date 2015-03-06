@@ -1,15 +1,22 @@
 <div class="panel panel-default">
   <div class="panel-heading">Sent</div>
   <div class="panel-body">
-    <ul>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>To</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      <tbody>
       {{#each sent in model}}
-        <div class="col-md-4">
-          <li>
-            {{#link-to 'sent-message' sent}}{{sent.sentEmail}}, {{sent.sentSubject}}{{/link-to}}
-          </li>
-        </div>
+        <tr>
+          <td class="email">{{#link-to 'sent-message' sent}}{{sent.sentEmail}}{{/link-to}}</td>
+          <td>{{#link-to 'sent-message' sent}}{{sent.sentSubject}}{{/link-to}}</td>
+        </tr>
       {{/each}}
-    </ul>
+      </tbody>
+    </table>
   </div>
 </div>
 

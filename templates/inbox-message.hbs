@@ -1,3 +1,12 @@
-<h4>Email Address: {{senderEmail}}</h4>
-<h4>Subject: {{senderSubject}}</h4>
-<h4>{{senderBody}}</h4>
+<div class="panel panel-default">
+  <div class="panel-heading">{{sentSubject}}</div>
+  <div class="panel-body">
+    <h4><b>Email Address:</b>&nbsp;&nbsp;{{senderEmail}}</h4>
+    <h4><b>Subject:</b>&nbsp;&nbsp;{{senderSubject}}</h4>
+    <div class="panel-body">
+      <h4>{{senderBody}}</h4>
+    </div>
+  </div>
+</div>
+
+{{#link-to 'new-inbox' class="btn btn-primary"}}Compose{{/link-to}}
