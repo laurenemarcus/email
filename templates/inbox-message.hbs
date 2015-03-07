@@ -1,11 +1,10 @@
 <div class="panel panel-default">
   <div class="panel-heading">{{senderSubject}}</div>
   <div class="panel-body">
-    <h4><b>Email Address:</b>&nbsp;&nbsp;{{senderEmail}}</h4>
-    <h4><b>Subject:</b>&nbsp;&nbsp;{{senderSubject}}</h4>
-    <div class="panel-body">
-      <h4>{{senderBody}}</h4>
-    </div>
+    <p><b>From:</b>&nbsp;&nbsp;{{senderEmail}}</p>
+    <p><b>Subject:</b>&nbsp;&nbsp;{{senderSubject}}</p>
+    <hr>
+    {{senderBody}}
   </div>
 </div>
 

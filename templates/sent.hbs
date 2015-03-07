@@ -10,10 +10,10 @@
       </thead>
       <tbody>
       {{#each sent in model}}
-        <tr>
-          <td class="email">{{#link-to 'sent-message' sent}}{{sent.sentEmail}}{{/link-to}}</td>
-          <td>{{#link-to 'sent-message' sent}}{{sent.sentSubject}}{{/link-to}}</td>
-        </tr>
+      <tr>
+        <td class="email">{{#link-to 'sent-message' sent}}{{sent.sentEmail}}{{/link-to}}</td>
+        <td>{{#link-to 'sent-message' sent}}{{sent.sentSubject}}{{/link-to}}</td>
+      </tr>
       {{/each}}
       </tbody>
     </table>
