@@ -13,14 +13,46 @@ body {
 
 .panel-body {
   background-color: #D0E5E6;
+  color: #494752;
 }
 
 .panel-heading {
 background-color: #87ACB5;
+color: #494752;
+
 }
 
 .btn {
   background-color: #888B9C;
   color: white;
+  border-color: #888B9C;
+}
+
+a {
+  color: #494752;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.panel-default>.panel-heading {
+  color: #494752;
+  border-color: #888B9C;
+  background: #89ABB5;
+}
+
+.form-control {
+  border: #87ACB5;
+}
+
+.panel-default {
+  border-color: #B9D8DA;
+}
+
+.navbar {
+   background: #D0E5E6;
+   border-color: #D0E5E6;
 
 }
