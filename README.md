@@ -1,6 +1,10 @@
 INTRODUCTION
 ------------
-The Email App allows a user to create and view their inbox and sent messages.
+The Email App allows a user to compose emails and view their inbox and sent messages.
+
+This app demonstrates usage of JavaScript, Ember.js, and Ember Data.
+
+
 
 REQUIREMENTS
 ------------
@@ -16,7 +20,7 @@ In your browser, go to the following page:
 
 KNOWN BUGS
 ---------
-Doesn't preload email messages into the inbox. Doesn't validate for email address format before sending.
+Doesn't validate for email address format before sending.
 
 AUTHOR
 -------
